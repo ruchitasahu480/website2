@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to make a website easy tutorials</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .banner{
+            width: 100%;
+            height: 100vh;
+           background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("p.avif");
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: cover;
+        }
+        .navbar{
+            display: flex;
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .logo{
+            width:189px;
+           
+            cursor: pointer;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+    font-family: sans-serif;
+        }
+        .navbar ul li::after{
+content: '';
+height: 3px;
+width: 0;
+background: #009688;
+position: absolute;
+left: 0;
+bottom:-10px;
+transition: 0.5s;
+        }
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            text-align: center;
+            color:white;
+            transform:translateY(-50%);
+        }
+        .content h1{
+            font-size: 70px;
+            margin: top 80px ;
+        }
+        .content p{
+            margin: 20px auto;
+            font-weight: 400;
+            line-height: 25px;
+        }
+        button{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #009688;
+            cursor: pointer;
+            color: white;
+            background: transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        span{
+background: #009688;
+height: 100%;
+width:0;
+border-radius: 25px;
+position: absolute;
+left: 0; 
+bottom: 0;
+z-index: -1;
+transition: 0.5s;
+        }
+        button:hover span{
+width: 100%;
+        }
+        button:hover{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar"><img src="th.jpg"  class=" logo" alt="">
+        <ul>
+            <li><a href="
+                #">Home</a></li>
+                <li><a href="
+                    #">Bedroom</a></li>
+                    <li><a href="
+                        #">Kitchen</a></li>
+                        <li><a href="
+                            #">Dining</a></li>
+                            <li><a href="
+                                #">Backyard</a></li>
+        </ul></div>
+    </div>
+    <div>
+        <div class="content">
+            <h1>DESIGN YOUR HOUSE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deserunt aperiam consectetur quibusdam <br> nemo dolorem quaerat quam quae? Error </p>
+            <div>
+                <button type="button"><span></span>WATCH MORE</button>
+                <button type="button"><span></span>SUBSCRIBE </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
